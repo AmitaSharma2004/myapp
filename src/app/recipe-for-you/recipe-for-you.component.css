@@ -1,0 +1,116 @@
+/* Suggested */
+.suggested-wrap {
+    margin-top: 20px;
+}
+.suggested-wrap .view-more {
+   float: right;
+    font-size: 14px;
+    color: lightseagreen;
+}
+.recipes-img{
+
+}
+.btn .btn-sm {
+    font-size: 11px;
+}
+p {
+    font-size: 11px;
+}
+
+/* Timer */
+.timer {
+	width: 49%;
+    font-size: 11px;
+	float: left;
+}
+
+/* Rating */
+.rating {
+	width: 50%;
+	float: right;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 1vw;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    background-color:transparent;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .recipe-full-visualizer {
+          background-color: lightskyblue;
+          width: 80%;
+          height: 100%;
+          text-align: center;
+          padding: 20px;
+          margin-left: 10%;
+      }
+  
+      .picturecol,
+      .descriptioncol,
+      .prepsection,
+      .servessection,
+      .ingredientstext {
+          width: 70%;
+          margin-left: 15%;
+          text-align: center;
+      }
+  
+      .picturecol img,
+      .descriptioncol p {
+          width: 100%;
+          padding: 20px;
+      }
+  
+      .ingredientstext {
+          background-color: white;
+          padding: 20px;
+      }
+  
+      .stepstext {
+          width: 70%;
+          margin-left: 15%;
+          text-align: left;
+          background-color: white;
+          padding: 20px;
+      }
+      .col-sm-3 .card {
+    background-color: #ecfafc;
+
+}

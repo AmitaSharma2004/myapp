@@ -1,0 +1,38 @@
+<div >
+    <div class="col-md-6 order-md-2" *ngIf = "displayForm">
+        <img class="card-img-top" src="/assets/img/categ_4.gif">
+        <div class="card-body">
+            <h6 class="card-title">{{recipe.title}}</h6>
+        </div>
+        <label for="email" class="form-label">Recipe Name ( max length 200 )</label>
+        <input type="name" class="form-control" id="name" placeholder="">
+
+        <label for="short discription" class="form-label">Short Description </label>
+        <div class="form-group">
+            <textarea placeholder="Description" id="discription" class="form-control"></textarea>
+        </div>
+
+        <label for="directions" class="form-label">Directions </label>
+        <div class="form-group">
+            <textarea placeholder="Directions" id="discription" class="form-control"></textarea>
+        </div>
+
+        <label for="ingredients" class="form-label">Ingredients</label>
+        <div class="ingredients">
+            <textarea placeholder="Ingredients" id="add-ingredient" class="form-control"></textarea>
+        </div>
+
+        <label for="tips" class="form-label">Cooking Tips</label>
+        <div class="ingredients">
+            <textarea placeholder="Cooking Tips" id="add-ingredient" class="form-control"></textarea>
+        </div>
+
+        <br />
+
+        <button onclick="ghgh" class="btn btn-primary" (click)="submitRecipe()">Save Recepie</button>
+    </div>
+
+    <div *ngIf = "displayMessage">
+        <h2> Your Recipe has been Updated!</h2>
+    </div>
+</div>

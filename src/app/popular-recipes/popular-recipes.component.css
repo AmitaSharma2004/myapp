@@ -1,0 +1,26 @@
+/* main banner */
+.main-banner{
+    background-image:url("/assets/img/banner.gif") ;
+    background-repeat: no-repeat;
+    float: auto;
+    background-size: cover;
+    height: 90px;
+    margin-top: -25px;
+   } 
+.menu, .your-account {
+    display: block;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-bottom: 1px solid gray;
+    color: darkgoldenrod;
+    padding-bottom: 10px;
+}
+.text-block {
+  position: absolute;
+  bottom: 5px;
+  left: 40px;
+  background-color:transparent;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}

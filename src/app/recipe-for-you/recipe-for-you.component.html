@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-sm-12 suggested-wrap">
+        <h6>Suggested Recipes for you
+            <a href="#" class="view-more">View more > </a>
+        </h6>
+    </div>
+    <div *ngFor="let recipe of recipes" class="col-sm-3">
+        <div class="card" *ngIf="displayRecipes">
+            <img class="card-img-top" src="/assets/img/categ_4.gif">
+            <div class="card-body">
+                <h6 class="card-title">{{recipe.title}}</h6>
+                <p class="card-text">{{recipe.prep_methods}}</p>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" (click)="onPressView(recipe)">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" (click)="onPressEdit(recipe)">Edit</button>
+                </div>
+                <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio"
+                        name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating"
+                        value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2"
+                        id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label
+                        for="1">☆</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<app-view-recipe *ngIf="viewRecipes" [recipe] = recipe></app-view-recipe>
+    <app-edit-recipe *ngIf="editRecipes" [recipe] = recipe></app-edit-recipe>
